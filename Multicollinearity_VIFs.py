@@ -42,3 +42,5 @@ vif['vif_factor'] = [variance_inflation_factor(X.values, i) for i in range(X.sha
 vif['features'] = X.columns
 
 # Rule of thumb with VIFs: Remove any one variable from a pair if the VIF values are above 10.
+
+# The end.
