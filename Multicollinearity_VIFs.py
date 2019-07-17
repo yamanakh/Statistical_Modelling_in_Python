@@ -30,7 +30,7 @@ df = pd.read_csv('data.csv')
 #4 Run a regression model
 df['intercept'] = 1   # Setting up the intercept (not automatically done in statsmodels)
 
-linear_model = sm.OLS(df['dependent'], df[['colnames', 'of', 'independents']])
+linear_model = sm.OLS(df['dependent'], df[['intercept', 'colnames', 'of', 'independents']])
 results = linear_model.fit()
 results.summary()   # Show the results summary
 
